@@ -1,6 +1,6 @@
 # Container images
 
-Welcome to our container images, if looking for a container start by [browsing the container packages](https://github.com/onedr0p?tab=packages&repo_name=containers).
+Welcome to our container images, if looking for a container start by [browsing the container packages](https://github.com/lltr?tab=packages&repo_name=containers).
 
 ## Mission statement
 
@@ -10,7 +10,7 @@ We also try to adhere to a [KISS principle](https://en.wikipedia.org/wiki/KISS_p
 
 ## Tag immutability
 
-The containers built here do not use immutable tags, as least not in the more common way you have seen from [linuxserver.io](https://fleet.linuxserver.io/) or [Bitnami](https://bitnami.com/stacks/containers). 
+The containers built here do not use immutable tags, as least not in the more common way you have seen from [linuxserver.io](https://fleet.linuxserver.io/) or [Bitnami](https://bitnami.com/stacks/containers).
 
 We take do take a similar approach but instead of appending a `-ls69` or `-r420` prefix to the tag we instead insist on pinning to the sha256 digest of the image, while this is not as pretty it is just as functional in making the images immutable.
 
@@ -84,4 +84,4 @@ Containers here can be **deprecated** at any point, this could be for any reason
 
 ## Credits
 
-A lot of inspiration and ideas are thanks to the hard work of [hotio.dev](https://hotio.dev/) and [linuxserver.io](https://www.linuxserver.io/) contributors.
+Cloned from [onedr0p/containers](https://github.com/onedr0p/containers/tree/main).
