@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-version=$(curl -sX GET "https://api.github.com/repos/excalidraw/excalidraw/releases/latest" | jq --raw-output '. | .tag_name')
-version="${version#*v}"
-version="${version#*release-}"
-printf "%s" "${version}"
+git clone --quiet https://github.com/excalidraw/excalidraw.git /tmp/excalidraw
+pushd /tmp/excalidraw > /dev/null || exit
+version=$(git rev-list --count --first-parent HEAD)
+popd > /dev/null || exit
+rm -rf /tmp/excalidraw
+printf "0.0.%d" "${version}"
