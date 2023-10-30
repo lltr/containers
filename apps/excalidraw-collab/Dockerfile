@@ -8,7 +8,7 @@ USER node
 
 WORKDIR /tmp/node_app
 
-ENV NODE_ENV=production
+ENV NODE_ENV=development
 ENV VITE_APP_PORTAL_URL=""
 ENV VITE_APP_DISABLE_TRACKING=true
 ENV VITE_APP_WS_SERVER_URL=http://localhost:3002
