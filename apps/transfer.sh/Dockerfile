@@ -5,6 +5,8 @@ FROM golang:${GO_VERSION}-alpine as build
 # Necessary to run 'go get' and to compile the linked binary
 RUN apk add git musl-dev mailcap
 
+RUN git clone https://github.com/dutchcoders/transfer.sh .
+
 WORKDIR /go/src/github.com/dutchcoders/transfer.sh
 
 COPY go.mod go.sum ./
