@@ -1,5 +1,5 @@
 {
-  "app": "transfer.sh",
+  "app": "transfer.sh-noroot",
   "base": false,
   "channels": [
     {
