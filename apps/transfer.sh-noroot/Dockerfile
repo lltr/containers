@@ -37,7 +37,6 @@ COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certifica
 
 ARG PROVIDER=local
 ARG BASEDIR=/tmp/
-
 ENV PROVIDER=$PROVIDER
 ENV BASEDIR=$BASEDIR
 
